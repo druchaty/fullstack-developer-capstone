@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [
         "tools-us-east-0.proxy.cognitiveclass.ai"
     ),
 ]
-CSRF_TRUSTED_ORIGINS = [ (
+CSRF_TRUSTED_ORIGINS = [(
         "https://mykoladriuch-8000.theianext-0-labs-prod-misc-"
         "tools-us-east-0.proxy.cognitiveclass.ai"
     )
