@@ -20,3 +20,17 @@ npm run build
 cd database
 docker build . -t nodeapp
 docker-compose up
+
+
+
+# CarMake, CarModel
+cd server
+python3 manage.py makemigrations
+python3 manage.py migrate --run-syncdb
+
+# Recompile frontend:
+cd server/frontend
+npm run build
+
+# Start Django app:
+python3 manage.py runserver
