@@ -96,7 +96,7 @@ def registration(request):
         return JsonResponse(data)
 
 
-# Update the `get_dealerships` render list of dealerships all by default, 
+# Update the `get_dealerships` render list of dealerships all by default,
 # particular state if state is passed
 def get_dealerships(request, state="All"):
     if state == "All":
@@ -135,9 +135,11 @@ def add_review(request):
     if not request.user.is_anonymous:
         data = json.loads(request.body)
         try:
-            response = post_review(data)
+            post_review(data)
             return JsonResponse({"status": 200})
-        except:
-            return JsonResponse({"status": 401, "message": "Error in posting review"})
+        except Exception as e:
+            print(f"Error: {e}")
+            return JsonResponse({"status": 401,
+                                 "message": "Error in posting review"})
     else:
         return JsonResponse({"status": 403, "message": "Unauthorized"})
