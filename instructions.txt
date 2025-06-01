@@ -8,3 +8,9 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py runserver
 
+# Create SU to access '/admin' page
+python3 manage.py createsuperuser
+
+cd server/frontend
+npm install
+npm run build
