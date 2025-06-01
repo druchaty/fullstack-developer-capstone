@@ -34,3 +34,7 @@ npm run build
 
 # Start Django app:
 python3 manage.py runserver
+
+# If no CarMake drop-down menu
+python3 manage.py makemigrations
+python3 manage.py migrate --run-syncdb
