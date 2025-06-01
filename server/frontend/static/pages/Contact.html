@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <link rel="stylesheet" href="/static/styles/bootstrap.min.css">
 </head>
 <div>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -18,42 +18,57 @@
                         <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+                        <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+                        <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="card">
-        <div class="banner">
-            <img src="/static/cars.jpeg" alt="Car lot">
-        </div>
+    <div class="card" style="width: 60%; margin: auto; margin-top:3%;">
+        
+        <!-- Logical Group Container -->
+        <div class="bg-white bg-opacity-50 rounded p-4">
 
-        <div class="row">
-            <div class="col-md-2 text-center">
-                <img class="img_icon" src="/static/contactus.png" alt="Support Icon">
+            <!-- Row 1: Full-width image -->
+            <div class="mb-3 text-center">
+                <img src="/static/images/cars.jpeg" class="img-fluid rounded" alt="Responsive image"
+                    style="max-width: 100%; height: auto;" />
             </div>
 
-            <div class="col-md-9 details">
-                <p><strong>Contact Customer Service</strong><br>
-                    support@bestcars.com</p>
+            <hr class="my-4" />
 
-                <p><strong>Contact our National Advertising team</strong><br>
-                    NationalSales@bestcars.com</p>
+            <!-- Row 2: Two 50% columns -->
+            <div class="row">
+                <!-- Left Column: Image -->
+                <div
+                    class="col-md-6 mb-3 mb-md-0 border-end border-2 border-secondary d-flex justify-content-center align-items-center">
+                    <img src="/static/images/contactus.png" alt="Half width" class="img-fluid rounded" />
+                </div>
 
-                <p><strong>Contact our Public Relations team</strong><br>
-                    PR@bestcars.com</p>
+                <!-- Right Column: Text -->
+                <div class="col-md-6 text-center">
+                    <p><strong>Contact Customer Service</strong><br>
+                        support@bestcars.com</p>
 
-                <p><strong>Contact the bestcars.com offices</strong><br>
-                    312-611-1111</p>
+                    <p><strong>Contact our National Advertising team</strong><br>
+                        NationalSales@bestcars.com</p>
 
-                <p><strong>Become a bestcars.com car dealer</strong><br>
-                    Visit <a href="https://growwithbestcars.com" target="_blank">growwithbestcars.com</a></p>
+                    <p><strong>Contact our Public Relations team</strong><br>
+                        PR@bestcars.com</p>
+
+                    <p><strong>Contact the bestcars.com offices</strong><br>
+                        312-611-1111</p>
+
+                    <p><strong>Become a bestcars.com car dealer<br>
+                            Visit <a href="https://growwithbestcars.com"
+                                target="_blank">growwithbestcars.com</a></strong></p>
+                </div>
             </div>
+
         </div>
     </div>
 </div>
