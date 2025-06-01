@@ -14,3 +14,9 @@ python3 manage.py createsuperuser
 cd server/frontend
 npm install
 npm run build
+
+
+# Database
+cd database
+docker build . -t nodeapp
+docker-compose up
