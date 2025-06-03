@@ -44,3 +44,11 @@ python3 manage.py migrate --run-syncdb
 cd server/djangoapp/microservices
 docker build . -t senti_analyzer_local
 docker run -p 5000:5000 senti_analyzer_local
+
+
+# Cars Inventory
+cd server/carsInventory
+docker build . -t nodeapp
+docker-compose up
+
+#       -> localhost:3050
